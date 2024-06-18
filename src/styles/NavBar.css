@@ -1,0 +1,119 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f4f4f9, #e0e5ec); /* Match background gradient from ProfessionalPage.css */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px auto;
+  max-width: 1200px;
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  text-shadow: none; /* Remove text shadow */
+  margin-left: 10px;
+}
+
+.navbar-logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-buttons button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 15px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  font-family: 'Arial', sans-serif;
+  border-radius: 5px;
+}
+
+.navbar-buttons button:hover {
+  color: #fff;
+  background: #34495e; /* Darker teal color on hover */
+  transform: scale(1.1);
+}
+
+.navbar-buttons button::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #2c3e50;
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+}
+
+.navbar-buttons button:hover::after {
+  width: 100%;
+  left: 0;
+  background: #fff; /* White color on hover */
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-icon {
+  color: #2c3e50;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-icon:hover {
+  transform: scale(1.2);
+  color: #34495e; /* Darker teal color on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+  }
+}

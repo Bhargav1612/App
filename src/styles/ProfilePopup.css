@@ -1,0 +1,66 @@
+.profile-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 244, 249, 0.5); /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.profile-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensures the close button is positioned correctly */
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #e74c3c; /* Red color for close button */
+  transition: color 0.3s ease-in-out;
+}
+
+.close:hover {
+  color: #c0392b; /* Darker red on hover */
+}
+
+.popup-heading {
+  font-size: 1.8em;
+  color: #2c3e50; /* Dark color for heading */
+  margin-bottom: 20px;
+}
+
+.popup-description {
+  font-size: 1em;
+  color: #555; /* Darker grey color for description */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popup-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    max-width: 90%;
+  }
+}
+
+
+  

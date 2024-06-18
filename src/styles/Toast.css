@@ -1,0 +1,21 @@
+/* src/styles/Toast.css */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #62df83;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.toast.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+  
